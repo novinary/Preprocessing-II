@@ -214,6 +214,9 @@ img {
   .home .top-header {
     width: 450px;
     margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
   .home .top-header h2 {
     align-self: flex-start;
@@ -223,6 +226,30 @@ img {
   .home .top-header p {
     width: 450px;
   }
+}
+.home .btn {
+  font-size: 1.2rem;
+  border: 1px solid black;
+  border-radius: 7px;
+  background-color: lightblue;
+  color: black;
+  width: 90%;
+  height: 40px;
+  padding-left: 28%;
+  padding-top: 7%;
+}
+@media (max-width: 500px) {
+  .home .btn {
+    padding-left: 32%;
+    padding-bottom: 10%;
+    padding-top: 3%;
+    font-size: 1.6rem;
+    height: 20px;
+  }
+}
+.home .btn:hover {
+  background-color: gray;
+  color: lavender;
 }
 .home .logo {
   margin-bottom: 2%;
@@ -237,9 +264,26 @@ img {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 450px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .home .content-section .text-content h2 {
+    align-self: flex-start;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 450px;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -269,29 +313,28 @@ img {
   display: flex;
   justify-content: space-between;
 }
-.home .inverse-content .destination {
+.home .inverse-content .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
 }
-.home .inverse-content .destination .btn {
-  background: #17a2B8;
-  border-radius: 10px;
-  color: white;
-  font-weight: bold;
-  padding-top: 3.5%;
-  padding-left: 25%;
-  font-size: 1.5rem;
-  width: 20rem;
-  height: 3rem;
+@media (max-width: 500px) {
+  .home .inverse-content .content-pick .destination {
+    width: 90%;
+  }
 }
-.home .inverse-content .destination .btn {
-  background: #17A2B8;
-  border-radius: 10px;
-  color: white;
-  font-weight: bold;
-  padding-top: 3.5%;
-  padding-left: 10.5%;
-  font-size: 1.5rem;
-  width: 14rem;
-  height: 3.2rem;
+@media (max-width: 500px) {
+  .home .inverse-content .content-pick {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 450px;
+    margin: 0 auto;
+  }
 }
