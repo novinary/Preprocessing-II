@@ -1,3 +1,14 @@
+.flexbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.flexbox-col {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -199,6 +210,20 @@ img {
   border-top: 1px dashed;
   border-bottom: 1px dashed;
 }
+@media (max-width: 500px) {
+  .home .top-header {
+    width: 450px;
+    margin-bottom: 30px;
+  }
+  .home .top-header h2 {
+    align-self: flex-start;
+    padding-bottom: 10px;
+  }
+  .home .top-header img,
+  .home .top-header p {
+    width: 450px;
+  }
+}
 .home .logo {
   margin-bottom: 2%;
 }
@@ -231,24 +256,35 @@ img {
   padding-right: 1%;
   padding-left: 0;
 }
-.home .content-destination {
+.home .inverse-content .content-destination {
   width: 75%;
   margin: 0 auto 30px;
 }
-.home .content-destination img {
+.home .inverse-content .content-destination img {
   border-radius: 10px;
 }
-.home .content-pick {
+.home .inverse-content .content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
 }
-.home .content-pick .destination {
+.home .inverse-content .destination {
   width: 30%;
   margin-bottom: 30px;
 }
-.home .content-pick .btn {
+.home .inverse-content .destination .btn {
+  background: #17a2B8;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  padding-top: 3.5%;
+  padding-left: 25%;
+  font-size: 1.5rem;
+  width: 20rem;
+  height: 3rem;
+}
+.home .inverse-content .destination .btn {
   background: #17A2B8;
   border-radius: 10px;
   color: white;

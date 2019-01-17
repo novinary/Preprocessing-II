@@ -3,6 +3,20 @@
   .top-header{
     border-top: 1px dashed;
     border-bottom: 1px dashed;
+
+    @media @mobile {
+      width: 450px;
+      margin-bottom: 30px;
+  
+      h2 {
+        align-self: flex-start;
+        padding-bottom: 10px;
+      }
+  
+      img, p {
+        width: 450px;
+      }
+    }
   }
 
   .logo{
@@ -42,7 +56,6 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
-    }
   }
 
   .content-destination {
@@ -59,10 +72,13 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      .btn {
+        .btn-style(10px, #17a2B8, 20rem, 3rem);
     }
 
     .btn {
@@ -78,3 +94,5 @@
       }
   }
 }// home
+
+}
