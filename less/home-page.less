@@ -1,8 +1,23 @@
 .home {
-  
+  .main-nav nav{
+    width: 30%;
+    @media (max-width: 500px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 150%;    
+    }
+  }
+  .main-nav h1{
+    @media (max-width: 500px) {
+    display: flex;
+    justify-content: center;
+    }
+  }
   .top-header{
-    border-top: 1px dashed;
-    border-bottom: 1px dashed;
+    border-top: 2px dashed #C0C0C0;
+    border-bottom: 2px dashed #C0C0C0;
+
 
     @media @mobile {
       width: 450px;
