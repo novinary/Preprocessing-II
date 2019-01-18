@@ -1,21 +1,99 @@
 .home {
+  .main-nav nav{
+    width: 30%;
+    @media (max-width: 500px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 150%;    
+    }
+  }
+  .main-nav h1{
+    @media (max-width: 500px) {
+    display: flex;
+    justify-content: center;
+    }
+  }
+  .top-header{
+    border-top: 2px dashed #C0C0C0;
+    border-bottom: 2px dashed #C0C0C0;
+
+
+    @media @mobile {
+      width: 450px;
+      margin-bottom: 30px;
+      .flexbox-col;
+  
+      h2 {
+        align-self: flex-start;
+        padding-bottom: 10px;
+      }
+  
+      img, p {
+        width: 450px;
+      }
+    }
+  }
+
+  .btn {
+    font-size: 1.2rem;
+    border: 1px solid black;
+    border-radius: 7px;
+    background-color: lightblue;
+    color: black;
+
+    @media (max-width: 500px) {
+      padding-left: 32%;
+      padding-bottom: 10%;
+      padding-top: 3%;
+      font-size: 1.6rem;
+      height: 20px;
+      
+    }
+
+    &:hover{
+      background-color: gray;
+      color:lavender;
+
+    }
+    width: 90%;
+    height: 40px;
+    padding-left: 28%;
+    padding-top: 7%;
+  }
+
+  .logo{
+    margin-bottom: 2%;
+  }
 
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-   
-    
+ 
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 450px;
+        padding: 5px;
+        .flexbox-col;
+
+        h2 {
+          align-self: flex-start;
+        }
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media @mobile {
+        width: 450px;
+      }
 
       img {
         border-radius: 10px;
@@ -35,7 +113,6 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
-    }
   }
 
   .content-destination {
@@ -52,10 +129,28 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
-
+   
     .destination {
       width: 30%;
       margin-bottom: 30px;
-    }
+      //.btn {
+        //.btn-style(10px, #17a2B8, 20rem, 3rem);
+
+        @media @mobile {
+          width: 90%;
+        }
+      }
+      @media @mobile {
+        .flexbox-col;
+      }
+    
   }
+  @media @mobile {
+    .flexbox-col;
+    width: 450px;
+    margin: 0 auto;
+  }
+}
 }// home
+
+
